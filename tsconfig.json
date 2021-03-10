@@ -18,7 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitReturns": true, //関数内のすべての経路で、返り値の型があっているかをチェックする
+    "noUnusedLocals": true, //宣言して、一度も使われないローカル変数があると、コンパイルエラーになる
   },
   "include": [
     "src"
